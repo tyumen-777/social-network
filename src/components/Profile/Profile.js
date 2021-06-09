@@ -1,14 +1,15 @@
 import React from 'react';
-import profile from './Profile.module.css'
 import MyPosts from "./MyPosts/MyPosts";
+import ProfileInfo from "./ProfileInfo/ProfileInfo";
 
-function Profile() {
+
+
+
+function Profile({postsData}) {
     return (
         <div>
-            <div><img src="https://static.tildacdn.com/tild3431-3830-4966-a265-323736393038/05_tumen.jpg" alt=""
-                      className={profile.content__image}/></div>
-            <div>ava</div>
-            <MyPosts/>
+            <ProfileInfo/>
+            <MyPosts posts={postsData}/>
         </div>
     )
 };

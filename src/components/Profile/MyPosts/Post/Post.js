@@ -11,7 +11,7 @@ function Post(props) {
                 alt=""/>
             {props.message}
             <div>
-                <span>{props.likescounter}</span>
+                <span>{props.likescounter} likes</span>
             </div>
         </div>
 
